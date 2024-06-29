@@ -1,0 +1,10 @@
+.about__title-h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.about__title-text {
+  width: 400px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
