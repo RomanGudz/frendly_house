@@ -14,6 +14,40 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa-Regular"),
+    url("../fonts/Comfortaa-Regular.woff2") format("woff2"),
+    url("../fonts/Comfortaa-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: local("HelveticaNeueCyr"),
+    url("../fonts/helveticaneuecyr-light.woff2") format("woff2"),
+    url("../fonts/helveticaneuecyr-light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: local("HelveticaNeueCyr"),
+    url("../fonts/helveticaneuecyr-medium.woff2") format("woff2"),
+    url("../fonts/helveticaneuecyr-medium.woff") format("woff");
+  font-weight: 500;
+}
+
+:root {
+  --font-familly: "HelveticaNeueCyr", sans-serif;
+  --second-family: "Comfortaa", sans-serif;
+  --1: #ff8a00;
+  --2: #282626;
+  --3: #fff;
+  --4: #f2f0f1;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -41,6 +75,7 @@ address {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 button {
@@ -89,7 +124,7 @@ iframe {
 }
 
 section {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 /* section:last-of-type {
@@ -119,6 +154,49 @@ section {
 
 .container {
   max-width: 1440px;
-  padding: 30px;
+  padding: 0 130px;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 72px;
+    margin: 0 auto;
+  }
+
+  .visually-hidden-1000px {
+    position: fixed;
+    transform: scale(0);
+  }
+  section {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 34px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 320px;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+
+  .visually-hidden-320px {
+    position: fixed;
+    transform: scale(0);
+  }
+
+  section {
+    padding-top: 40px;
+  }
 }
