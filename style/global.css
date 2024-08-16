@@ -40,12 +40,14 @@
 }
 
 :root {
-  --font-familly: "HelveticaNeueCyr", sans-serif;
+  --font-family: "HelveticaNeueCyr", sans-serif;
   --second-family: "Comfortaa", sans-serif;
+  --third-family: "Arial", sans-serif;
   --1: #ff8a00;
   --2: #282626;
   --3: #fff;
   --4: #f2f0f1;
+  --shadow-button: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
 }
 
 html {
@@ -124,7 +126,7 @@ iframe {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 
 /* section:last-of-type {

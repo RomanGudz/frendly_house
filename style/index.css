@@ -1,5 +1,7 @@
 @import "./normalize.css";
 @import "./global.css";
+@import "./navigate.css";
+@import "./banner.css";
 @import "./about.css";
 @import "./main_help.css";
 @import "./help_form.css";
