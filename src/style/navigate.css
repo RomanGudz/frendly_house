@@ -2,11 +2,8 @@
   margin-bottom: 27px;
 }
 
-.header__navigate {
-  padding-top: 21px;
-}
-
 .header__navigate-list {
+  padding-top: 21px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

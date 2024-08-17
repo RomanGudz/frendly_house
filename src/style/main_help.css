@@ -43,7 +43,7 @@
   position: absolute;
   width: 80px;
   height: 80px;
-  background-image: url("../img/Ellipse.svg");
+  background-image: url("/img/Ellipse.svg");
 }
 
 .main-help__list-item:first-of-type:before {
