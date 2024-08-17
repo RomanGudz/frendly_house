@@ -21,7 +21,9 @@ export const js = () => gulp.src('src/js/**/*.js')
 export const copy = () => gulp.src([
   'src/fonts/**/*',
   'src/img/**/*'
-])
+], {
+  base: 'src'
+})
   .pipe(gulp.dest('dist'))
   .pipe(browserSync.stream({
     once: true
