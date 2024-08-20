@@ -30,16 +30,18 @@ export const style = () => {
     .pipe(browserSync.stream());
 };
 
-export const js = () => gulp.src('src/js/**/*.js')
+export const js = () => gulp
+  .src('src/js/**/*.js')
   .pipe(gulp.dest('dist/js'))
   .pipe(browserSync.stream());
 
-export const copy = () => gulp.src([
-  'src/fonts/**/*',
-  'src/img/**/*'
-], {
-  base: 'src'
-})
+export const copy = () => gulp
+  .src([
+    'src/fonts/**/*',
+    'src/img/**/*'
+  ], {
+    base: 'src'
+  })
   .pipe(gulp.dest('dist'))
   .pipe(browserSync.stream({
     once: true
