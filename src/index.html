@@ -42,13 +42,17 @@
         </li>
         <li class="header__navigate-item">
           <picture>
-            <source srcset="img//logo.avif" type="image/avif">
-            <source srcset="img//logo.webp" type="image/webp">
-            <img class="header__navigate-item-img" src="./img/logo.png" alt="логотип приюта для животных FriendlyHouse"
-              width="356" height="45">
+            <source srcset="img/logo.avif" type="image/avif">
+            <source srcset="img/logo.webp" type="image/webp">
+            <img loading="lazy" class="header__navigate-item-img" src="./img/logo.png"
+              alt="логотип приюта для животных FriendlyHouse" width="346" height="44">
           </picture>
-          <img class="header__navigate-item-img" src="./img/animal-shelter.png" alt="приют для животных" width="189"
-            height="15">
+          <picture>
+            <source srcset="img/animal-shelter.avif" type="image/avif">
+            <source srcset="img/animal-shelter.webp" type="image/webp">
+            <img loading="lazy" class="header__navigate-item-img" src="./img/animal-shelter.png"
+              alt="приют для животных" width="189" height="15">
+          </picture>
         </li>
         <li class="header__navigate-item">
           <a href="tel:+78493003957" class="header__navigate-item-link" aria-label="кнопка с номером телефона">
@@ -76,9 +80,22 @@
           </span>
         </h1>
 
-        <button class="banner__button"><img src="./img/paw 1.png" alt="кнопка ввиде лапы собаки"
-            class="banner__button-img">Жми на лапку, чтобы помочь!</button>
-        <img src="./img/sara-baner.jpg" alt="собака по кличке Сара" class="banner__img">
+        <button class="banner__button">
+          <picture>
+            <source srcset="img/paw 1.avif" type="image/avif">
+            <source srcset="img/paw 1.webp" type="image/webp">
+            <img loading="lazy" src="./img/paw 1.png" alt="кнопка ввиде лапы собаки" class="banner__button-img"
+              width="110" height="101">
+          </picture>
+          Жми на лапку, чтобы
+          помочь!
+        </button>
+        <picture>
+          <source srcset="img/sara-baner.avif" type="image/avif">
+          <source srcset="img/sara-baner.webp" type="image/webp">
+          <img loading="lazy" src="./img/sara-baner.jpg" alt="собака по кличке Сара" class="banner__img" width="580"
+            height="580">
+        </picture>
       </div>
     </section>
 
@@ -97,7 +114,12 @@
               заботимся о качесте наших подопечных и осуществляем профессиональный медецинский уход.
             </p>
           </div>
-          <img src="./img/sara.jpg" alt="собака по кличке Сара на улице" class="about__img">
+          <picture>
+            <source srcset="img/sara.avif" type="image/avif">
+            <source srcset="img/sara.webp" type="image/webp">
+            <img loading="lazy" src="./img/sara.jpg" alt="собака по кличке Сара на улице" class="about__img" width="580"
+              height="330">
+          </picture>
           <a href="#" class="about__link">СМИ о нас</a>
         </div>
       </div>
@@ -108,14 +130,24 @@
         <h2 class="our-projects__grid-title">Наши проекты</h2>
         <div class="our-projects__grid">
           <a href="#" class="our-projects__grid-photo">
-            <img src="./img/dog1.jpg" alt="" class="our-projects__grid-photo-img">
+            <picture>
+              <source srcset="img/dog1.avif" type="image/avif">
+              <source srcset="img/dog1.webp" type="image/webp">
+              <img loading="lazy" src="./img/dog1.jpg" alt="" class="our-projects__grid-photo-img" width="219"
+                height="141">
+            </picture>
             <h3 class="our-projects__grid-photo-h3">Новый дом для животных</h3>
             <p class="our-projects__grid-photo-p">Приют появился практически одновременно с созданием Фонда в ...
             </p>
             <p class="our-projects__grid-photo-link">Подробнее</p>
           </a>
           <a href="#" class="our-projects__grid-photo">
-            <img src="./img/dog2.jpg" alt="" class="our-projects__grid-photo-img">
+            <picture>
+              <source srcset="img/dog2.avif" type="image/avif">
+              <source srcset="img/dog2.webp" type="image/webp">
+              <img loading="lazy" src="./img/dog2.jpg" alt="" class="our-projects__grid-photo-img" width="219"
+                height="141">
+            </picture>
             <h3 class="our-projects__grid-photo-h3">Маленькие модники</h3>
             <p class="our-projects__grid-photo-p"> Наши котики и собачки тоже любят наряжаться, чтобы красиво выглядеть
               ...
@@ -123,14 +155,24 @@
             <p class="our-projects__grid-photo-link">Подробнее</p>
           </a>
           <a href="#" class="our-projects__grid-photo">
-            <img src="./img/dog3.jpg" alt="" class="our-projects__grid-photo-img">
+            <picture>
+              <source srcset="img/dog3.avif" type="image/avif">
+              <source srcset="img/dog3.webp" type="image/webp">
+              <img loading="lazy" src="./img/dog3.jpg" alt="" class="our-projects__grid-photo-img" width="219"
+                height="141">
+            </picture>
             <h3 class="our-projects__grid-photo-h3">Поиграй со мной!</h3>
             <p class="our-projects__grid-photo-p">Новая программа нашего приюта “Поиграй со мной”. Приводите своих ...
             </p>
             <p class="our-projects__grid-photo-link">Подробнее</p>
           </a>
           <a href="#" class="our-projects__grid-photo">
-            <img src="./img/dog4.jpg" alt="" class="our-projects__grid-photo-img">
+            <picture>
+              <source srcset="img/dog4.avif" type="image/avif">
+              <source srcset="img/dog4.webp" type="image/webp">
+              <img loading="lazy" src="./img/dog4.jpg" alt="" class="our-projects__grid-photo-img" width="219"
+                height="141">
+            </picture>
             <h3 class="our-projects__grid-photo-h3">Конкурс “Лучшее фото”</h3>
             <p class="our-projects__grid-photo-p">Приходи к нам в Friendly House и делай классные фотографии наших
               животн...
@@ -143,18 +185,26 @@
           </a>
           <div class="our-projects__grid-photo-more">
             <h3 class="our-projects__grid-photo-more-h3">Больше проектов</h3>
-            <img src="./img/Rectangle 117.jpg" alt="" class="our-projects__grid-photo-img-small">
-            <img src="./img/Rectangle 118.jpg" alt="" class="our-projects__grid-photo-img-small">
-            <img src="./img/Rectangle 119.jpg" alt="" class="our-projects__grid-photo-img-small">
-            <img src="./img/Rectangle 120.jpg" alt="" class="our-projects__grid-photo-img-small">
-            <img src="./img/Rectangle 121.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-320px">
-            <img src="./img/Rectangle 122.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-320px">
-            <img src="./img/Rectangle 123.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-1000px">
-            <img src="./img/Rectangle 124.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-1000px">
-            <img src="./img/Rectangle 125.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-1000px">
-            <img src="./img/Rectangle 126.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-1000px">
-            <img src="./img/Rectangle 127.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-1000px">
-            <img src="./img/Rectangle 128.jpg" alt="" class="our-projects__grid-photo-img-small visually-hidden-1000px">
+            <img loading="lazy" src="./img/Rectangle 117.jpg" alt="" class="our-projects__grid-photo-img-small">
+            <img loading="lazy" src="./img/Rectangle 118.jpg" alt="" class="our-projects__grid-photo-img-small">
+            <img loading="lazy" src="./img/Rectangle 119.jpg" alt="" class="our-projects__grid-photo-img-small">
+            <img loading="lazy" src="./img/Rectangle 120.jpg" alt="" class="our-projects__grid-photo-img-small">
+            <img loading="lazy" src="./img/Rectangle 121.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-320px">
+            <img loading="lazy" src="./img/Rectangle 122.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-320px">
+            <img loading="lazy" src="./img/Rectangle 123.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-1000px">
+            <img loading="lazy" src="./img/Rectangle 124.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-1000px">
+            <img loading="lazy" src="./img/Rectangle 125.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-1000px">
+            <img loading="lazy" src="./img/Rectangle 126.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-1000px">
+            <img loading="lazy" src="./img/Rectangle 127.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-1000px">
+            <img loading="lazy" src="./img/Rectangle 128.jpg" alt=""
+              class="our-projects__grid-photo-img-small visually-hidden-1000px">
             <a href="#" class="our-projects__grid-photo-link more-link-visible">Увидеть все</a>
           </div>
         </div>
@@ -179,9 +229,10 @@
                 </p>
               </div>
               <div class="main-help__item-wrapper-img-first">
-                <img src="./img/rabbit.jpg" class="main-help__item-img-first" alt="кролик ест морковку">
-                <img src="./img/dog4.jpg" class="main-help__item-img-first" alt="фото собаки">
-                <img src="./img/Rectangle 112.jpg" class="main-help__item-img-first" alt="фото собаки  в мед ошейнике">
+                <img loading="lazy" src="./img/rabbit.jpg" class="main-help__item-img-first" alt="кролик ест морковку">
+                <img loading="lazy" src="./img/dog4.jpg" class="main-help__item-img-first" alt="фото собаки">
+                <img loading="lazy" src="./img/Rectangle 112.jpg" class="main-help__item-img-first"
+                  alt="фото собаки  в мед ошейнике">
               </div>
             </li>
             <li class="main-help__list-item">
@@ -203,7 +254,8 @@
                   присоединяйтесь к нашей дружной команде! :)
                 </p>
               </div>
-              <img src="./img/Rectangle 114.jpg" alt="фото собаки и человека" class="main-help__item-img">
+              <img loading="lazy" src="./img/Rectangle 114.jpg" alt="фото собаки и человека"
+                class="main-help__item-img">
             </li>
             <li class="main-help__list-item">
               <h3 class="main-help__item-title h3-last-title">Стать опекуном</h3>
@@ -219,13 +271,14 @@
                 </p>
               </div>
               <div class="main-help__item-wrapper-img-two">
-                <img src="./img/cat1.jpg" class="main-help__item-img-two" alt="фото кошки крупным планом">
-                <img src="./img/cat2.jpg" class="main-help__item-img-two" alt="кошка играет с человеком">
-                <img src="./img/dog6.jpg" class="main-help__item-img-two" alt="человек обнимает собаку">
+                <img loading="lazy" src="./img/cat1.jpg" class="main-help__item-img-two"
+                  alt="фото кошки крупным планом">
+                <img loading="lazy" src="./img/cat2.jpg" class="main-help__item-img-two" alt="кошка играет с человеком">
+                <img loading="lazy" src="./img/dog6.jpg" class="main-help__item-img-two" alt="человек обнимает собаку">
               </div>
             </li>
           </ol>
-          <button class="main-help__button"><img src="./img/paw 1.png" alt="кнопка ввиде лапы собаки"
+          <button class="main-help__button"><img loading="lazy" src="./img/paw 1.png" alt="кнопка ввиде лапы собаки"
               class="main-help__button-img">Жми
             на лапку, чтобы помочь!</button>
         </div>
@@ -237,28 +290,28 @@
         <h2 class="our-pets__title">Наши питомцы</h2>
         <div class="our-pets__grid">
           <figure class="our-pets__grid-figure">
-            <img src="./img/Rectangle 104.jpg" alt="" class="our-pets__grid-figure-img-dogcat">
+            <img loading="lazy" src="./img/Rectangle 104.jpg" alt="" class="our-pets__grid-figure-img-dogcat">
             <figcaption class="our-pets__grid-figure-figcaption">Миша (кот) и Ричард (пёс), 3 года и 5 лет</figcaption>
           </figure>
           <figure class="our-pets__grid-figure">
-            <img src="./img/Rectangle 107.jpg" alt="" class="our-pets__grid-figure-img">
+            <img loading="lazy" src="./img/Rectangle 107.jpg" alt="" class="our-pets__grid-figure-img">
             <figcaption class="our-pets__grid-figure-figcaption">Твинки и Пинки, 2 месяца</figcaption>
           </figure>
           <figure class="our-pets__grid-figure">
-            <img src="./img/Rectangle 103.jpg" alt="" class="our-pets__grid-figure-img">
+            <img loading="lazy" src="./img/Rectangle 103.jpg" alt="" class="our-pets__grid-figure-img">
             <figcaption class="our-pets__grid-figure-figcaption">Мурзик, 6 месяцев</figcaption>
           </figure>
           <figure class="our-pets__grid-figure">
-            <img src="./img/Rectangle 105.jpg" alt="" class="our-pets__grid-figure-img-dog">
+            <img loading="lazy" src="./img/Rectangle 105.jpg" alt="" class="our-pets__grid-figure-img-dog">
             <figcaption class="our-pets__grid-figure-figcaption">Джек, 1 год</figcaption>
           </figure>
           <figure class="our-pets__grid-figure">
-            <img src="./img/Rectangle 106.jpg" alt="" class="our-pets__grid-figure-img-hamster">
+            <img loading="lazy" src="./img/Rectangle 106.jpg" alt="" class="our-pets__grid-figure-img-hamster">
             <figcaption class="our-pets__grid-figure-figcaption">Джерри, 3 недели</figcaption>
           </figure>
           <figure class="our-pets__grid-figure">
-            <img src="./img/Rectangle 108.jpg" alt="" class="our-pets__grid-figure-img-parrots">
-            <img src="./img/Rectangle 109.jpg" alt="" class="our-pets__grid-figure-img-parrots">
+            <img loading="lazy" src="./img/Rectangle 108.jpg" alt="" class="our-pets__grid-figure-img-parrots">
+            <img loading="lazy" src="./img/Rectangle 109.jpg" alt="" class="our-pets__grid-figure-img-parrots">
             <figcaption class="our-pets__grid-figure-figcaption">Рокки и Сеня, 2 и 3 года</figcaption>
           </figure>
         </div>
@@ -301,7 +354,7 @@
               <input type="email" name="email" class="form-help__form-input"></label>
           </div>
           <button class="form-help__form-button" type="submit">
-            <img src="./img/paw 1.svg" alt="кнопка ввиде лапы собаки" class="form-help__button-img">
+            <img loading="lazy" src="./img/paw 1.svg" alt="кнопка ввиде лапы собаки" class="form-help__button-img">
             Отправить</button>
         </form>
       </div>

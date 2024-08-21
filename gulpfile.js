@@ -34,12 +34,12 @@ export const style = () => {
   if (prepros) {
     return gulp
       .src('src/scss/**/*.scss')
-      .pipe(souresMaps.init())
+      .pipe(gulpIf(dev, souresMaps.init()))
       .pipe(sass().on('error', sass.logError))
       .pipe(cssClean({
         2: { specialComments: 0 }
       }))
-      .pipe(souresMaps.write('../maps'))
+      .pipe(gulpIf(dev, souresMaps.write('../maps')))
       .pipe(gulp.dest('dist/css'))
       .pipe(browserSync.stream())
   }
@@ -147,6 +147,6 @@ export const devepol = async () => {
 
 export const base = gulp.parallel(html, style, img, webp, avif, copy);
 
-export const build = gulp.series(clear, base, criticalCss);
+export const build = gulp.series(base, criticalCss);
 
 export default gulp.series(devepol, base, server);
