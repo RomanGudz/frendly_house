@@ -11,7 +11,17 @@
   <link rel="preload" href="fonts/helveticaneuecyr-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/helveticaneuecyr-light.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="./css/index.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const createLink = url => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet';
+        link.href = url;
+        document.head.append(link);
+      }
+      createLink('css/index.css')
+    })
+  </script>
 
   <title>Friendly house</title>
 </head>
