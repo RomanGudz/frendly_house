@@ -4,6 +4,7 @@
     url("../fonts/DroidSerif.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     url("../fonts/DroidSerif-Bold.woff2") format("woff2"),
     url("../fonts/DroidSerif-Bold.woff") format("woff");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
     url("../fonts/Comfortaa-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -29,6 +32,7 @@
     url("../fonts/helveticaneuecyr-light.woff2") format("woff2"),
     url("../fonts/helveticaneuecyr-light.woff") format("woff");
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
@@ -37,6 +41,7 @@
     url("../fonts/helveticaneuecyr-medium.woff2") format("woff2"),
     url("../fonts/helveticaneuecyr-medium.woff") format("woff");
   font-weight: 500;
+  font-display: swap;
 }
 
 :root {
@@ -172,6 +177,7 @@ section {
     transform: scale(0);
   }
   section {
+    font-display: swap;
     padding-top: 70px;
   }
 }
