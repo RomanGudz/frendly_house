@@ -139,6 +139,10 @@
   line-height: 130%;
 }
 
+.our-projects__grid-photo-img-small {
+  border: 1px solid transparent;
+}
+
 .our-projects__grid-photo-img-small:hover {
   border: 1px solid var(--1);
 }
