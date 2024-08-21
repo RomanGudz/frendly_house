@@ -83,13 +83,13 @@ export const img = () => gulp
 
 export const webp = () => gulp
   .src('src/img/**/*.{jpg,jpeg,png}')
-  .pipe(gulpAvif())
+  .pipe(gulpWebp())
   .pipe(gulp.dest('dist/img'))
   .pipe(browserSync.stream());
 
 export const avif = () => gulp
   .src('src/img/**/*.{jpg,jpeg,png}')
-  .pipe(gulpWebp())
+  .pipe(gulpAvif())
   .pipe(gulp.dest('dist/img'))
   .pipe(browserSync.stream());
 
