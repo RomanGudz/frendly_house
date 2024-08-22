@@ -14,6 +14,8 @@ import gulpAvif from 'gulp-avif';
 import gulpWebp from 'gulp-webp';
 import { stream as critical } from 'critical';
 import gulpIf from 'gulp-if'
+import auotoPrefix from 'gulp-autoprefixer';
+import gulpBabel from 'gulp-babel';
 
 const prepros = true;
 let dev = false;
@@ -36,6 +38,7 @@ export const style = () => {
       .src('src/scss/**/*.scss')
       .pipe(gulpIf(dev, souresMaps.init()))
       .pipe(sass().on('error', sass.logError))
+      .pipe(auotoPrefix())
       .pipe(cssClean({
         2: { specialComments: 0 }
       }))
@@ -50,6 +53,7 @@ export const style = () => {
     .pipe(cssimport({
       extensions: ['css'],
     }))
+    .pipe(auotoPrefix())
     .pipe(cssClean({
       2: { specialComments: 0 }
     }))
@@ -61,6 +65,10 @@ export const style = () => {
 export const js = () => gulp
   .src([...allJS, 'src/js/**/*.js'])
   .pipe(gulpIf(dev, souresMaps.init()))
+  .pipe(gulpBabel({
+    presets: ['@babel/preset-env'],
+    ignore: [...allJS]
+  }))
   .pipe(terser())
   // .pipe(concat('index.min.js'))
   .pipe(gulpIf(dev, souresMaps.write('../maps')))
