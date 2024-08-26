@@ -99,6 +99,7 @@ select {
 a {
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 
 ul,
@@ -134,13 +135,6 @@ section {
   padding-top: 90px;
 }
 
-/* section:last-of-type {
-  padding-bottom: 51px;
-} */
-
-/* section:first-of-type {
-  padding-top: 146px;
-} */
 /*
 Доступно скрываю элементы
 */
@@ -163,6 +157,22 @@ section {
   max-width: 1440px;
   padding: 0 130px;
   margin: 0 auto;
+  position: relative;
+}
+
+.btn-shadow {
+  filter: drop-shadow(4px 6px 3px rgba(0, 0, 0, 0.25));
+  transition: filter 0.5s ease;
+}
+
+.btn-shadow:hover,
+.btn-shadow:active {
+  filter: drop-shadow(4px 6px 3px rgba(#ff8a00, 0.25));
+}
+
+.global-size-img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -179,6 +189,12 @@ section {
   section {
     font-display: swap;
     padding-top: 70px;
+  }
+
+  .global-size-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @media (max-width: 768px) {
