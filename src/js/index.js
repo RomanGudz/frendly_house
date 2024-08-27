@@ -79,6 +79,21 @@ function init() {
     });
 
   myMap.geoObjects.add(mark);
-}
+};
+
+
+$(function () {
+  $("#tabs").tabs({
+    activate: function (event, ui) {
+      $('.banner__tabs-list-item').removeClass('hidden-tab');
+      console.log(ui);
+      const activeTabId = ui.newTab.find('a').attr('href');
+      $('a[href="' + activeTabId + '"]').closest('.banner__tabs-list-item').addClass('hidden-tab');
+    }
+  });
+
+  const activeTabId = $("#tabs").tabs("option", "active");
+  $('.banner__tabs-list-item').eq(activeTabId).addClass('hidden-tab');
+});
 
 ymaps.ready(init);

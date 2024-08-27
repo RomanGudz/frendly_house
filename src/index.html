@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/helveticaneuecyr-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/helveticaneuecyr-light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css"> -->
   <script type="module" src="./js/index.min.js"></script>
 
   <script src="https://api-maps.yandex.ru/2.1?apikey=64fb0585-18de-4e54-94f4-784dc3e91268&lang=ru-RU"
@@ -111,83 +111,135 @@
 
   <main>
     <section class="banner">
-      <div class="container banner__grid">
-        <h1 class="banner__h1">Сара ждёт<span class="banner__span">,</span>
-          <span class="banner__span">
-            когда найдётся
-            её человек
-          </span>
-        </h1>
-
-        <button class="banner__button" aria-label="кнопка ввиде лапы собаки" id="btn-modal">
-          <picture>
-            <source srcset="img/paw-1.avif" type="image/avif">
-            <source srcset="img/paw-1.webp" type="image/webp">
-            <img loading="lazy" src="./img/paw-1.png" alt="" width="110" height="101"
-              class="banner__button-img btn-shadow">
-          </picture>
-          Жми на лапку, чтобы
-          помочь!
-        </button>
-        <picture class="banner__img">
-          <source srcset="img/sara-baner.avif" type="image/avif">
-          <source srcset="img/sara-baner.webp" type="image/webp">
-          <img src="./img/sara-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
-        </picture>
-        <!-- <div id="tabs">
-          <ul>
-            <li><a href="#tabs-1">Nunc tincidunt</a></li>
-            <li><a href="#tabs-2">Proin dolor</a></li>
-            <li><a href="#tabs-3">Aenean lacinia</a></li>
+      <div class="container">
+        <div id="tabs" class="banner__tabs-wrapper">
+          <ul class="banner__tabs-list">
+            <li class="banner__tabs-list-item">
+              <a href="#tabs-1" class="banner__tabs-list-item-link">
+                <picture class="banner__tabs-list-item-link-png">
+                  <source srcset="img/sara-png.avif" type="image/avif">
+                  <source srcset="img/sara-png.webp" type="image/webp">
+                  <img src="./img/sara-png.png" alt="собака по кличке Сара" width="80" height="80">
+                </picture>Сара
+              </a>
+            </li>
+            <li class="banner__tabs-list-item">
+              <a href="#tabs-2" class="banner__tabs-list-item-link">
+                <picture class="banner__tabs-list-item-link-png">
+                  <source srcset="img/boris-png.avif" type="image/avif">
+                  <source srcset="img/boris-png.webp" type="image/webp">
+                  <img src="./img/boris-png.png" alt="кот по кличке Сара" width="80" height="80">
+                </picture>Борис
+              </a>
+            </li>
+            <li class="banner__tabs-list-item">
+              <a href="#tabs-3" class="banner__tabs-list-item-link">
+                <picture class="banner__tabs-list-item-link-png">
+                  <source srcset="img/lui-png.avif" type="image/avif">
+                  <source srcset="img/lui-png.webp" type="image/webp">
+                  <img src="./img/lui-png.png" alt="собака по кличке Луи" width="80" height="80">
+                </picture>Луи
+              </a>
+            </li>
+            <li class="banner__tabs-list-item">
+              <a href="#tabs-4" class="banner__tabs-list-item-link">
+                <picture class="banner__tabs-list-item-link-png">
+                  <source srcset="img/piter-png.avif" type="image/avif">
+                  <source srcset="img/piter-png.webp" type="image/webp">
+                  <img src="./img/piter-png.png" alt="кролик по кличке Питер" width="80" height="80">
+                </picture>Питер
+              </a>
+            </li>
+            <li class="banner__tabs-list-item">
+              <a href="#tabs-5" class="banner__tabs-list-item-link">
+                <picture class="banner__tabs-list-item-link-png">
+                  <source srcset="img/kenni-png.avif" type="image/avif">
+                  <source srcset="img/kenni-png.webp" type="image/webp">
+                  <img src="./img/kenni-png.png" alt="кот по кличке Кенни" width="80" height="80">
+                </picture>Кенни
+              </a>
+            </li>
           </ul>
-          <div id="tabs-1">
-            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec
-              sollicitudin mi sit
-              amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus
-              auctor risus.
-              Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam
-              sodales
-              tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin.
-              Sed ut
-              dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          <div id="tabs-1" class="banner__tabs-div">
+            <h1 class="banner__h1">Сара ждёт
+              <span class="banner__span">,</span>
+              <span class="banner__span">
+                когда найдётся
+                её человек
+              </span>
+            </h1>
+            <picture class="banner__img">
+              <source srcset="img/sara-baner.avif" type="image/avif">
+              <source srcset="img/sara-baner.webp" type="image/webp">
+              <img src="./img/sara-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
+            </picture>
           </div>
-          <div id="tabs-2">
-            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
-              nunc. Duis
-              scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut
-              tempus
-              eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
-              Praesent in
-              eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel
-              metus. Ut
-              posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus
-              pellentesque
-              pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et
-              purus.</p>
+          <div id="tabs-2" class="banner__tabs-div">
+            <h1 class="banner__h1">Борис ждёт
+              <span class="banner__span">,</span>
+              <span class="banner__span">
+                когда найдётся
+                её человек
+              </span>
+            </h1>
+            <picture class="banner__img">
+              <source srcset="img/boris-baner.avif" type="image/avif">
+              <source srcset="img/boris-baner.webp" type="image/webp">
+              <img src="./img/boris-baner.jpg" alt="кот по кличке Сара" width="580" height="580">
+            </picture>
           </div>
-          <div id="tabs-3">
-            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
-              accumsan,
-              mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu
-              ad litora
-              torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
-              pellentesque.
-              Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus
-              a,
-              lacus.</p>
-            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
-              facilisi.
-              Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis,
-              pede vel
-              pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non
-              libero
-              sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae,
-              pede. Aenean
-              vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus
-              a
-              libero vitae lectus hendrerit hendrerit.</p>
+          <div id="tabs-3" class="banner__tabs-div">
+            <h1 class="banner__h1 lui-h1">Луи ждёт <span class="banner__span">,</span>
+              <span class="banner__span">
+                когда найдётся
+                её человек
+              </span>
+            </h1>
+            <picture class="banner__img">
+              <source srcset="img/lui-baner.avif" type="image/avif">
+              <source srcset="img/lui-baner.webp" type="image/webp">
+              <img src="./img/lui-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
+            </picture>
           </div>
-        </div> -->
+          <div id="tabs-4" class="banner__tabs-div">
+            <h1 class="banner__h1">Питер ждёт
+              <span class="banner__span">,</span>
+              <span class="banner__span">
+                когда найдётся
+                её человек
+              </span>
+            </h1>
+            <picture class="banner__img">
+              <source srcset="img/piter-baner.avif" type="image/avif">
+              <source srcset="img/piter-baner.webp" type="image/webp">
+              <img src="./img/piter-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
+            </picture>
+          </div>
+          <div id="tabs-5" class="banner__tabs-div">
+            <h1 class="banner__h1">Кенни ждёт
+              <span class="banner__span">,</span>
+              <span class="banner__span">
+                когда найдётся
+                её человек
+              </span>
+            </h1>
+            <picture class="banner__img">
+              <source srcset="img/kenni-baner.avif" type="image/avif">
+              <source srcset="img/kenni-baner.webp" type="image/webp">
+              <img src="./img/kenni-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
+            </picture>
+          </div>
+          <button class="banner__button" aria-label="кнопка ввиде лапы собаки" id="btn-modal">
+            <picture>
+              <source srcset="img/paw-1.avif" type="image/avif">
+              <source srcset="img/paw-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/paw-1.png" alt="" width="110" height="101"
+                class="banner__button-img btn-shadow">
+            </picture>
+            Жми на лапку, чтобы
+            помочь!
+          </button>
+        </div>
       </div>
     </section>
     <section class="about" id="about">
