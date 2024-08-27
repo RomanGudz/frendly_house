@@ -7,7 +7,7 @@ import { deleteAsync } from 'del';
 import htmlMin from 'gulp-htmlmin';
 import cssClean from 'gulp-clean-css';
 import terser from 'gulp-terser';
-// import concat from 'gulp-concat'; добавить после появления библеотек
+import concat from 'gulp-concat';
 import souresMaps from 'gulp-sourcemaps';
 import gulpImage from 'gulp-image';
 import gulpAvif from 'gulp-avif';
@@ -20,7 +20,10 @@ import gulpBabel from 'gulp-babel';
 const prepros = true;
 let dev = false;
 const sass = gulpSass(sassPkg);
-const allJS = ['сюда масив пути к каждому js файлу']
+const allJS = ['./src/js/script/jquery-3.7.1.min.js',
+  './src/js/script/jquery-ui.min.js',
+  './src/js/script/swiper-bundle.min.js'
+]
 
 export const html = () => gulp
   .src('src/*.html')
@@ -70,7 +73,7 @@ export const js = () => gulp
     ignore: [...allJS]
   }))
   .pipe(terser())
-  // .pipe(concat('index.min.js'))
+  .pipe(concat('index.min.js'))
   .pipe(gulpIf(dev, souresMaps.write('../maps')))
   .pipe(gulp.dest('dist/js'))
   .pipe(browserSync.stream());
@@ -153,7 +156,7 @@ export const devepol = async () => {
   dev = true;
 }
 
-export const base = gulp.parallel(html, style, img, webp, avif, copy);
+export const base = gulp.parallel(html, style, img, webp, avif, copy, js);
 
 export const build = gulp.series(base, criticalCss);
 

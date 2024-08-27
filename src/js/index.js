@@ -54,17 +54,29 @@ new Swiper('.swiper', {
   containerModifierClass: 'swiper-wrapper'
 });
 
-// $(function () {
-//   $("#tabs").tabs();
-// });
 
 function init() {
   const myMap = new ymaps.Map("map", {
-    center: [55.723661504206355, 37.56504308465882],
+    center: [55.847927, 37.374884],
     zoom: 17
   });
 
-  const mark = new ymaps.Placemark([55.723661504206355, 37.56504308465882]);
+  const mark = new ymaps.Placemark([55.847927, 37.374884], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/mark.svg',
+    iconImageSize: [39, 59],
+    iconImageOffset: [-19, -59]
+  });
+
+  mark.events
+    .add('mouseenter', function (e) {
+      e.get('target').options.set('iconImageSize', [49, 75]);
+      e.get('target').options.set('iconImageOffset', [-24, -75]);
+    })
+    .add('mouseleave', function (e) {
+      e.get('target').options.set('iconImageSize', [39, 59]);
+      e.get('target').options.set('iconImageOffset', [-19, -59]);
+    });
 
   myMap.geoObjects.add(mark);
 }
