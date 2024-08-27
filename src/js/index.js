@@ -43,7 +43,21 @@ menuHeader.addEventListener('click', e => {
   }
 });
 
-new Swiper('.swiper', {
+
+const swiper1 = new Swiper('.main-help__swiper', {
+
+  direction: 'horizontal',
+  loop: true,
+  containerModifierClass: 'swiper-wrapper',
+  slidesPerView: 'auto',
+  centeredSlides: false,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 1000,
+  },
+});
+
+const swiper2 = new Swiper('.our-pets__swiper', {
 
   direction: 'horizontal',
   loop: true,
@@ -53,6 +67,21 @@ new Swiper('.swiper', {
   },
   containerModifierClass: 'swiper-wrapper'
 });
+
+const swiper3 = new Swiper('.main-help__swiper-two', {
+
+  direction: 'horizontal',
+  loop: true,
+  containerModifierClass: 'swiper-wrapper',
+  slidesPerView: 'auto',
+  centeredSlides: false,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 1000,
+  },
+});
+
+
 
 
 function init() {

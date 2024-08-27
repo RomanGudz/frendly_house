@@ -1,4 +1,4 @@
-.swiper {
+.our-pets__swiper {
   display: none;
   position: static;
 }
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 768px) {
-  .swiper {
+  .our-pets__swiper {
     display: flex;
   }
 
@@ -76,10 +76,6 @@
 }
 
 @media (max-width: 480px) {
-  .swiper {
-    position: static;
-  }
-
   .our-pets__flex-figure {
     gap: 10px;
   }
