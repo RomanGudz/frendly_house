@@ -126,3 +126,52 @@ $(function () {
 });
 
 ymaps.ready(init);
+
+
+const form = $('.form-help__form')[0];
+const modalForm = $('.form-help__form')[1];
+
+modalForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const value = e.target;
+  const data = {
+    phone: value[0].value,
+    email: value[1].value
+  };
+  $.ajax({
+    "url": 'https://jsonplaceholder.typicode.com/posts',
+    "method": 'post',
+    "dataType": 'json',
+    "data": JSON.stringify(data),
+    success: function (data) {
+      console.log(data);
+      modalOverlay.classList.toggle('modal__overlay-visible');
+    },
+    error: function (exception) {
+      console.log('exception: ', exception);
+
+    }
+  });
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const value = e.target;
+  const data = {
+    phone: value[0].value,
+    email: value[1].value
+  };
+  $.ajax({
+    "url": 'https://jsonplaceholder.typicode.com/posts',
+    "method": 'post',
+    "dataType": 'json',
+    "data": JSON.stringify(data),
+    success: function (data) {
+      console.log(data);
+    },
+    error: function (exception) {
+      console.log('exception: ', exception);
+
+    }
+  });
+});
