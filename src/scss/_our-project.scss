@@ -24,6 +24,7 @@
   grid-template-rows: 1fr;
   gap: 20px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .our-projects__grid-photo:nth-child(2) {
@@ -90,6 +91,7 @@
 }
 
 .our-projects__grid-img-dog-bg {
+  cursor: pointer;
   grid-column: 9/13;
   grid-row: 1/4;
   background-image: url("../img/dog5.jpg");

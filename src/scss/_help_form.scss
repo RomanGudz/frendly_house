@@ -5,6 +5,7 @@
 }
 .form-help__form {
   background-color: #f2f0f1;
+  font-family: var(--font-family);
   border-radius: 20px;
   max-width: 780px;
   margin: 0 auto;
@@ -52,6 +53,7 @@
 }
 
 .form-help__item-link {
+  font-weight: 500;
   padding-left: 16px;
 }
 
@@ -64,6 +66,7 @@
 }
 
 .form-help__form-label {
+  font-family: var(--font-family);
   font-weight: 300;
   font-size: 12px;
   line-height: 117%;
