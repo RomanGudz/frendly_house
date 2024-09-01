@@ -11,7 +11,6 @@
   <link rel="preload" href="fonts/helveticaneuecyr-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/helveticaneuecyr-light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css"> -->
   <script type="module" src="./js/index.min.js"></script>
 
   <script src="https://api-maps.yandex.ru/2.1?apikey=64fb0585-18de-4e54-94f4-784dc3e91268&lang=ru-RU"
@@ -34,48 +33,43 @@
 <body>
   <header class="header">
     <div class="container">
-      <ul class="header__list">
-        <li class="header__item">
-          <button class="navigate__button-menu" aria-label="кнопка меню">
-            <svg width="40" height="21" viewbox="0 0 40 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-              class="navigate__button-menu-svg">
-              <rect width="40" height="3" rx="1" />
-              <rect y="9" width="40" height="3" rx="1" />
-              <rect y="18" width="29" height="3" rx="1" />
-            </svg>
-            <svg class="navigate__button-menu-svg-close toggle-svg" viewbox="0 0 33 31" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.797363" y="28.5814" width="40" height="3" rx="1" transform="rotate(-45 0.797363 28.5814)" />
-              <rect x="3.91846" y="0.29718" width="40" height="3" rx="1" transform="rotate(45 3.91846 0.29718)" />
-            </svg>
-          </button>
-
-        </li>
-        <li class="header__item">
-          <picture class="header__item-img">
+      <div class="header__flex-container">
+        <button class="header__navigate-button-menu" aria-label="кнопка меню">
+          <svg width="40" height="21" viewbox="0 0 40 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            class="header__navigate-button-menu-svg">
+            <rect width="40" height="3" rx="1" />
+            <rect y="9" width="40" height="3" rx="1" />
+            <rect y="18" width="29" height="3" rx="1" />
+          </svg>
+          <svg class="header__navigate-button-menu-svg-close toggle-svg" viewbox="0 0 33 31" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.797363" y="28.5814" width="40" height="3" rx="1" transform="rotate(-45 0.797363 28.5814)" />
+            <rect x="3.91846" y="0.29718" width="40" height="3" rx="1" transform="rotate(45 3.91846 0.29718)" />
+          </svg>
+        </button>
+        <div class="header__flex-container-img-wrapper">
+          <picture class="header__img-logo">
             <source srcset="img/logo.avif" type="image/avif">
             <source srcset="img/logo.webp" type="image/webp">
             <img loading="lazy" class="header__item-img" src="./img/logo.png"
               alt="логотип приюта для животных FriendlyHouse" width="346" height="44">
           </picture>
-          <picture class="header__item-img">
+          <picture class="header__img-logo">
             <source srcset="img/animal-shelter.avif" type="image/avif">
             <source srcset="img/animal-shelter.webp" type="image/webp">
             <img loading="lazy" src="./img/animal-shelter.png" alt="приют для животных" width="189" height="15">
           </picture>
-        </li>
-        <li class="header__item">
-          <a href="tel:+78493003957" class="header__link" aria-label="кнопка с номером телефона">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-              class="header__link-svg">
-              <path
-                d="M17.01 12.38C15.78 12.38 14.59 12.18 13.48 11.82C13.13 11.7 12.74 11.79 12.47 12.06L10.9 14.03C8.07 12.68 5.42 10.13 4.01 7.2L5.96 5.54C6.23 5.26 6.31 4.87 6.2 4.52C5.83 3.41 5.64 2.22 5.64 0.99C5.64 0.45 5.19 0 4.65 0H1.19C0.65 0 0 0.24 0 0.99C0 10.28 7.73 18 17.01 18C17.72 18 18 17.37 18 16.82V13.37C18 12.83 17.55 12.38 17.01 12.38Z"
-                fill="#FF8A00" />
-            </svg>
-            8 (849) 300 - 39 -57</a>
-        </li>
-      </ul>
-      <nav class="header__navigate navigate__visually-hidden">
+        </div>
+        <a href="tel:+78493003957" class="header__link" aria-label="кнопка с номером телефона">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            class="header__link-svg">
+            <path
+              d="M17.01 12.38C15.78 12.38 14.59 12.18 13.48 11.82C13.13 11.7 12.74 11.79 12.47 12.06L10.9 14.03C8.07 12.68 5.42 10.13 4.01 7.2L5.96 5.54C6.23 5.26 6.31 4.87 6.2 4.52C5.83 3.41 5.64 2.22 5.64 0.99C5.64 0.45 5.19 0 4.65 0H1.19C0.65 0 0 0.24 0 0.99C0 10.28 7.73 18 17.01 18C17.72 18 18 17.37 18 16.82V13.37C18 12.83 17.55 12.38 17.01 12.38Z"
+              fill="#FF8A00" />
+          </svg>
+          8 (849) 300 - 39 -57</a>
+      </div>
+      <nav class="header__navigate header__navigate-visually-hidden">
         <ul class="header__navigate-list">
           <li class="header__navigate-item line-item">
             <a href="#about" class="header__item-link">О приюте</a>
@@ -161,75 +155,76 @@
             </li>
           </ul>
           <div id="tabs-1" class="banner__tabs-div">
-            <h1 class="banner__h1">Сара ждёт
+            <div role="heading" aria-level="2" class="banner__h1">Сара ждёт
               <span class="banner__span">,</span>
               <span class="banner__span">
                 когда найдётся
                 её человек
               </span>
-            </h1>
-            <picture class="banner__img">
+            </div>
+            <picture class="banner__picture">
               <source srcset="img/sara-baner.avif" type="image/avif">
               <source srcset="img/sara-baner.webp" type="image/webp">
-              <img src="./img/sara-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
+              <img src="./img/sara-baner.jpg" alt="собака по кличке Сара" width="580" height="580"
+                class="banner__picture-img">
             </picture>
           </div>
           <div id="tabs-2" class="banner__tabs-div">
-            <h1 class="banner__h1">Борис ждёт
+            <div role="heading" aria-level="2" class="banner__h1">Борис ждёт
               <span class="banner__span">,</span>
               <span class="banner__span">
                 когда найдётся
                 её человек
               </span>
-            </h1>
-            <picture class="banner__img">
+            </div>
+            <picture class="banner__picture">
               <source srcset="img/boris-baner.avif" type="image/avif">
               <source srcset="img/boris-baner.webp" type="image/webp">
               <img src="./img/boris-baner.jpg" alt="кот по кличке Сара" width="580" height="580">
             </picture>
           </div>
           <div id="tabs-3" class="banner__tabs-div">
-            <h1 class="banner__h1 lui-h1">Луи ждёт <span class="banner__span">,</span>
+            <div role="heading" aria-level="2" class="banner__h1 lui-h1">Луи ждёт <span class="banner__span">,</span>
               <span class="banner__span">
                 когда найдётся
                 её человек
               </span>
-            </h1>
-            <picture class="banner__img">
+            </div>
+            <picture class="banner__picture">
               <source srcset="img/lui-baner.avif" type="image/avif">
               <source srcset="img/lui-baner.webp" type="image/webp">
               <img src="./img/lui-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
             </picture>
           </div>
           <div id="tabs-4" class="banner__tabs-div">
-            <h1 class="banner__h1">Питер ждёт
+            <div role="heading" aria-level="2" class="banner__h1">Питер ждёт
               <span class="banner__span">,</span>
               <span class="banner__span">
                 когда найдётся
                 её человек
               </span>
-            </h1>
-            <picture class="banner__img">
+            </div>
+            <picture class="banner__picture">
               <source srcset="img/piter-baner.avif" type="image/avif">
               <source srcset="img/piter-baner.webp" type="image/webp">
               <img src="./img/piter-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
             </picture>
           </div>
           <div id="tabs-5" class="banner__tabs-div">
-            <h1 class="banner__h1">Кенни ждёт
+            <div role="heading" aria-level="2" class="banner__h1">Кенни ждёт
               <span class="banner__span">,</span>
               <span class="banner__span">
                 когда найдётся
                 её человек
               </span>
-            </h1>
-            <picture class="banner__img">
+            </div>
+            <picture class="banner__picture">
               <source srcset="img/kenni-baner.avif" type="image/avif">
               <source srcset="img/kenni-baner.webp" type="image/webp">
               <img src="./img/kenni-baner.jpg" alt="собака по кличке Сара" width="580" height="580">
             </picture>
           </div>
-          <button class="banner__button" aria-label="кнопка ввиде лапы собаки" id="btn-modal">
+          <button class="banner__button btn-modal" aria-label="кнопка ввиде лапы собаки">
             <svg class="banner__button-img btn-shadow" width="111" height="96" viewBox="0 0 111 96" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -280,60 +275,81 @@
         <h2 class="our-projects__grid-title">Наши проекты</h2>
         <ul class="our-projects__grid">
           <li class="our-projects__grid-photo">
-            <picture>
+            <picture class="our-projects__grid-photo-picture">
               <source srcset="img/dog1.avif" type="image/avif">
               <source srcset="img/dog1.webp" type="image/webp">
-              <img loading="lazy" src="./img/dog1.jpg" alt="" class="our-projects__grid-photo-img" width="219"
-                height="180">
+              <img loading="lazy" src="./img/dog1.jpg" alt="" width="219" height="180"
+                class="our-projects__grid-photo-picture-img">
             </picture>
             <h3 class="our-projects__grid-photo-h3">Новый дом для животных</h3>
             <p class="our-projects__grid-photo-p">Приют появился практически одновременно с созданием Фонда в ...
             </p>
-            <a href="#" class="our-projects__grid-photo-link">Подробнее</a>
+            <a href="#" class="our-projects__grid-photo-link">Подробнее <svg width="27" height="17" viewBox="0 0 27 17"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.8125 8.50004C0.8125 8.25969 0.90798 8.02918 1.07793 7.85923C1.24789 7.68928 1.4784 7.59379 1.71875 7.59379H23.0936L17.3896 1.89167C17.2195 1.7215 17.1239 1.4907 17.1239 1.25005C17.1239 1.00939 17.2195 0.77859 17.3896 0.608421C17.5598 0.438251 17.7906 0.342651 18.0312 0.342651C18.2719 0.342651 18.5027 0.438251 18.6729 0.608421L25.9229 7.85842C26.0073 7.9426 26.0742 8.04261 26.1199 8.15271C26.1656 8.26281 26.1891 8.38084 26.1891 8.50004C26.1891 8.61925 26.1656 8.73728 26.1199 8.84738C26.0742 8.95748 26.0073 9.05749 25.9229 9.14167L18.6729 16.3917C18.5027 16.5618 18.2719 16.6574 18.0312 16.6574C17.7906 16.6574 17.5598 16.5618 17.3896 16.3917C17.2195 16.2215 17.1239 15.9907 17.1239 15.75C17.1239 15.5094 17.2195 15.2786 17.3896 15.1084L23.0936 9.40629H1.71875C1.4784 9.40629 1.24789 9.31082 1.07793 9.14086C0.90798 8.97091 0.8125 8.7404 0.8125 8.50004Z" />
+              </svg></a>
           </li>
           <li class="our-projects__grid-photo">
-            <picture>
+            <picture class="our-projects__grid-photo-picture">
               <source srcset="img/dog2.avif" type="image/avif">
               <source srcset="img/dog2.webp" type="image/webp">
-              <img loading="lazy" src="./img/dog2.jpg" alt="" class="our-projects__grid-photo-img" width="219"
+              <img loading="lazy" src="./img/dog2.jpg" alt="" class="our-projects__grid-photo-picture-img" width="219"
                 height="180">
             </picture>
             <h3 class="our-projects__grid-photo-h3">Маленькие модники</h3>
             <p class="our-projects__grid-photo-p"> Наши котики и собачки тоже любят наряжаться, чтобы красиво выглядеть
               ...
             </p>
-            <a href="#" class="our-projects__grid-photo-link">Подробнее</a>
+            <a href="#" class="our-projects__grid-photo-link">Подробнее <svg width="27" height="17" viewBox="0 0 27 17"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.8125 8.50004C0.8125 8.25969 0.90798 8.02918 1.07793 7.85923C1.24789 7.68928 1.4784 7.59379 1.71875 7.59379H23.0936L17.3896 1.89167C17.2195 1.7215 17.1239 1.4907 17.1239 1.25005C17.1239 1.00939 17.2195 0.77859 17.3896 0.608421C17.5598 0.438251 17.7906 0.342651 18.0312 0.342651C18.2719 0.342651 18.5027 0.438251 18.6729 0.608421L25.9229 7.85842C26.0073 7.9426 26.0742 8.04261 26.1199 8.15271C26.1656 8.26281 26.1891 8.38084 26.1891 8.50004C26.1891 8.61925 26.1656 8.73728 26.1199 8.84738C26.0742 8.95748 26.0073 9.05749 25.9229 9.14167L18.6729 16.3917C18.5027 16.5618 18.2719 16.6574 18.0312 16.6574C17.7906 16.6574 17.5598 16.5618 17.3896 16.3917C17.2195 16.2215 17.1239 15.9907 17.1239 15.75C17.1239 15.5094 17.2195 15.2786 17.3896 15.1084L23.0936 9.40629H1.71875C1.4784 9.40629 1.24789 9.31082 1.07793 9.14086C0.90798 8.97091 0.8125 8.7404 0.8125 8.50004Z" />
+              </svg></a>
           </li>
           <li class="our-projects__grid-photo">
-            <picture>
+            <picture class="our-projects__grid-photo-picture">
               <source srcset="img/dog3.avif" type="image/avif">
               <source srcset="img/dog3.webp" type="image/webp">
-              <img loading="lazy" src="./img/dog3.jpg" alt="" class="our-projects__grid-photo-img" width="219"
+              <img loading="lazy" src="./img/dog3.jpg" alt="" class="our-projects__grid-photo-picture-img" width="219"
                 height="180">
             </picture>
             <h3 class="our-projects__grid-photo-h3">Поиграй со мной!</h3>
             <p class="our-projects__grid-photo-p">Новая программа нашего приюта “Поиграй со мной”. Приводите своих ...
             </p>
-            <a href="#" class="our-projects__grid-photo-link">Подробнее</a>
+            <a href="#" class="our-projects__grid-photo-link">Подробнее <svg width="27" height="17" viewBox="0 0 27 17"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.8125 8.50004C0.8125 8.25969 0.90798 8.02918 1.07793 7.85923C1.24789 7.68928 1.4784 7.59379 1.71875 7.59379H23.0936L17.3896 1.89167C17.2195 1.7215 17.1239 1.4907 17.1239 1.25005C17.1239 1.00939 17.2195 0.77859 17.3896 0.608421C17.5598 0.438251 17.7906 0.342651 18.0312 0.342651C18.2719 0.342651 18.5027 0.438251 18.6729 0.608421L25.9229 7.85842C26.0073 7.9426 26.0742 8.04261 26.1199 8.15271C26.1656 8.26281 26.1891 8.38084 26.1891 8.50004C26.1891 8.61925 26.1656 8.73728 26.1199 8.84738C26.0742 8.95748 26.0073 9.05749 25.9229 9.14167L18.6729 16.3917C18.5027 16.5618 18.2719 16.6574 18.0312 16.6574C17.7906 16.6574 17.5598 16.5618 17.3896 16.3917C17.2195 16.2215 17.1239 15.9907 17.1239 15.75C17.1239 15.5094 17.2195 15.2786 17.3896 15.1084L23.0936 9.40629H1.71875C1.4784 9.40629 1.24789 9.31082 1.07793 9.14086C0.90798 8.97091 0.8125 8.7404 0.8125 8.50004Z" />
+              </svg></a>
           </li>
           <li class="our-projects__grid-photo">
-            <picture>
+            <picture class="our-projects__grid-photo-picture">
               <source srcset="img/dog4.avif" type="image/avif">
               <source srcset="img/dog4.webp" type="image/webp">
-              <img loading="lazy" src="./img/dog4.jpg" alt="" class="our-projects__grid-photo-img" width="219"
+              <img loading="lazy" src="./img/dog4.jpg" alt="" class="our-projects__grid-photo-picture-img" width="219"
                 height="180">
             </picture>
             <h3 class="our-projects__grid-photo-h3">Конкурс “Лучшее фото”</h3>
             <p class="our-projects__grid-photo-p">Приходи к нам в Friendly House и делай классные фотографии наших
               животн...
             </p>
-            <a href="#" class="our-projects__grid-photo-link">Подробнее</a>
+            <a href="#" class="our-projects__grid-photo-link">Подробнее <svg width="27" height="17" viewBox="0 0 27 17"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.8125 8.50004C0.8125 8.25969 0.90798 8.02918 1.07793 7.85923C1.24789 7.68928 1.4784 7.59379 1.71875 7.59379H23.0936L17.3896 1.89167C17.2195 1.7215 17.1239 1.4907 17.1239 1.25005C17.1239 1.00939 17.2195 0.77859 17.3896 0.608421C17.5598 0.438251 17.7906 0.342651 18.0312 0.342651C18.2719 0.342651 18.5027 0.438251 18.6729 0.608421L25.9229 7.85842C26.0073 7.9426 26.0742 8.04261 26.1199 8.15271C26.1656 8.26281 26.1891 8.38084 26.1891 8.50004C26.1891 8.61925 26.1656 8.73728 26.1199 8.84738C26.0742 8.95748 26.0073 9.05749 25.9229 9.14167L18.6729 16.3917C18.5027 16.5618 18.2719 16.6574 18.0312 16.6574C17.7906 16.6574 17.5598 16.5618 17.3896 16.3917C17.2195 16.2215 17.1239 15.9907 17.1239 15.75C17.1239 15.5094 17.2195 15.2786 17.3896 15.1084L23.0936 9.40629H1.71875C1.4784 9.40629 1.24789 9.31082 1.07793 9.14086C0.90798 8.97091 0.8125 8.7404 0.8125 8.50004Z" />
+              </svg></a>
           </li>
           <li class="our-projects__grid-img-dog-bg">
             <h3 class="our-projects__grid-img-dog-bg-h3">Собака лучший друг человека, или.... собаки?</h3>
-            <a href="#" class="our-projects__grid-photo-link img-dog-bg-link">Подробнее</a>
+            <a href="#" class="our-projects__grid-photo-link img-dog-bg-link">Подробнее
+              <svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.8125 8.50004C0.8125 8.25969 0.90798 8.02918 1.07793 7.85923C1.24789 7.68928 1.4784 7.59379 1.71875 7.59379H23.0936L17.3896 1.89167C17.2195 1.7215 17.1239 1.4907 17.1239 1.25005C17.1239 1.00939 17.2195 0.77859 17.3896 0.608421C17.5598 0.438251 17.7906 0.342651 18.0312 0.342651C18.2719 0.342651 18.5027 0.438251 18.6729 0.608421L25.9229 7.85842C26.0073 7.9426 26.0742 8.04261 26.1199 8.15271C26.1656 8.26281 26.1891 8.38084 26.1891 8.50004C26.1891 8.61925 26.1656 8.73728 26.1199 8.84738C26.0742 8.95748 26.0073 9.05749 25.9229 9.14167L18.6729 16.3917C18.5027 16.5618 18.2719 16.6574 18.0312 16.6574C17.7906 16.6574 17.5598 16.5618 17.3896 16.3917C17.2195 16.2215 17.1239 15.9907 17.1239 15.75C17.1239 15.5094 17.2195 15.2786 17.3896 15.1084L23.0936 9.40629H1.71875C1.4784 9.40629 1.24789 9.31082 1.07793 9.14086C0.90798 8.97091 0.8125 8.7404 0.8125 8.50004Z" />
+              </svg>
+            </a>
           </li>
-          <div class="our-projects__grid-photo-more">
+          <li class="our-projects__grid-photo-more">
             <h3 class="our-projects__grid-photo-more-h3">Больше проектов</h3>
 
             <picture class="our-projects__grid-photo-img-small">
@@ -396,8 +412,12 @@
               <source srcset="img/Rectangle128.webp" type="image/webp">
               <img loading="lazy" src="./img/Rectangle128.jpg" alt="" width="80" height="70">
             </picture>
-            <a href="#" class="our-projects__grid-photo-link more-link-visible">Увидеть все</a>
-          </div>
+            <a href="#" class="our-projects__grid-photo-link more-link-visible">Увидеть все
+              <svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.8125 8.50004C0.8125 8.25969 0.90798 8.02918 1.07793 7.85923C1.24789 7.68928 1.4784 7.59379 1.71875 7.59379H23.0936L17.3896 1.89167C17.2195 1.7215 17.1239 1.4907 17.1239 1.25005C17.1239 1.00939 17.2195 0.77859 17.3896 0.608421C17.5598 0.438251 17.7906 0.342651 18.0312 0.342651C18.2719 0.342651 18.5027 0.438251 18.6729 0.608421L25.9229 7.85842C26.0073 7.9426 26.0742 8.04261 26.1199 8.15271C26.1656 8.26281 26.1891 8.38084 26.1891 8.50004C26.1891 8.61925 26.1656 8.73728 26.1199 8.84738C26.0742 8.95748 26.0073 9.05749 25.9229 9.14167L18.6729 16.3917C18.5027 16.5618 18.2719 16.6574 18.0312 16.6574C17.7906 16.6574 17.5598 16.5618 17.3896 16.3917C17.2195 16.2215 17.1239 15.9907 17.1239 15.75C17.1239 15.5094 17.2195 15.2786 17.3896 15.1084L23.0936 9.40629H1.71875C1.4784 9.40629 1.24789 9.31082 1.07793 9.14086C0.90798 8.97091 0.8125 8.7404 0.8125 8.50004Z" />
+              </svg></a>
+          </li>
         </ul>
       </div>
     </section>
@@ -421,23 +441,21 @@
               </div>
               <div class="main-help__swiper swiper">
                 <div class="swiper-wrapper">
-                  <picture class="main-help__swiper-slide  swiper-slide rabbit-slide">
+                  <picture class="main-help__swiper-slide  swiper-slide ">
                     <source srcset="img/rabbit.avif" type="image/avif">
                     <source srcset="img/rabbit.webp" type="image/webp">
-                    <img loading="lazy" src="./img/rabbit.jpg" alt="кролик ест морковку" width="180" height="139"
-                      class="global-size-img">
+                    <img loading="lazy" src="./img/rabbit.jpg" alt="кролик ест морковку" width="200" height="111"
+                      class="rabbit-slide">
                   </picture>
                   <picture class="main-help__swiper-slide swiper-slide  dog-slide1">
                     <source srcset="img/dog4.avif" type="image/avif">
                     <source srcset="img/dog4.webp" type="image/webp">
-                    <img loading="lazy" src="./img/dog4.jpg" alt="фото собаки" width="180" height="139"
-                      class="global-size-img">
+                    <img loading="lazy" src="./img/dog4.jpg" alt="фото собаки" width="180" height="139">
                   </picture>
                   <picture class="main-help__swiper-slide swiper-slide dog-slide2">
                     <source srcset="img/Rectangle112.avif" type="image/avif">
                     <source srcset="img/Rectangle112.webp" type="image/webp">
-                    <img loading="lazy" src="./img/Rectangle112.jpg" alt="фото собаки  в мед ошейнике"
-                      class="global-size-img">
+                    <img loading="lazy" src="./img/Rectangle112.jpg" alt="фото собаки  в мед ошейнике">
                   </picture>
                 </div>
               </div>
@@ -445,20 +463,17 @@
                 <picture class="main-help__item-img-first">
                   <source srcset="img/rabbit.avif" type="image/avif">
                   <source srcset="img/rabbit.webp" type="image/webp">
-                  <img loading="lazy" src="./img/rabbit.jpg" alt="кролик ест морковку" width="180" height="139"
-                    class="global-size-img">
+                  <img loading="lazy" src="./img/rabbit.jpg" alt="кролик ест морковку" width="180" height="139">
                 </picture>
                 <picture class="main-help__item-img-first">
                   <source srcset="img/dog4.avif" type="image/avif">
                   <source srcset="img/dog4.webp" type="image/webp">
-                  <img loading="lazy" src="./img/dog4.jpg" alt="фото собаки" width="180" height="139"
-                    class="global-size-img">
+                  <img loading="lazy" src="./img/dog4.jpg" alt="фото собаки" width="180" height="139">
                 </picture>
                 <picture class="main-help__item-img-first">
                   <source srcset="img/Rectangle112.avif" type="image/avif">
                   <source srcset="img/Rectangle112.webp" type="image/webp">
-                  <img loading="lazy" src="./img/Rectangle112.jpg" alt="фото собаки  в мед ошейнике"
-                    class="global-size-img">
+                  <img loading="lazy" src="./img/Rectangle112.jpg" alt="фото собаки  в мед ошейнике">
                 </picture>
               </div>
             </li>
@@ -527,25 +542,22 @@
                 <picture class="main-help__item-img-two">
                   <source srcset="img/cat1.avif" type="image/avif">
                   <source srcset="img/cat1.webp" type="image/webp">
-                  <img loading="lazy" src="./img/cat1.jpg" alt="фото кошки крупным планом" width="280" height="382"
-                    class="global-size-img">
+                  <img loading="lazy" src="./img/cat1.jpg" alt="фото кошки крупным планом" width="280" height="382">
                 </picture>
                 <picture class="main-help__item-img-two">
                   <source srcset="img/cat2.avif" type="image/avif">
                   <source srcset="img/cat2.webp" type="image/webp">
-                  <img loading="lazy" src="./img/cat2.jpg" alt="кошка играет с человеком" width="280" height="181"
-                    class="global-size-img">
+                  <img loading="lazy" src="./img/cat2.jpg" alt="кошка играет с человеком" width="280" height="181">
                 </picture>
                 <picture class="main-help__item-img-two">
                   <source srcset="img/dog6.avif" type="image/avif">
                   <source srcset="img/dog6.webp" type="image/webp">
-                  <img loading="lazy" src="./img/dog6.jpg" alt="человек обнимает собаку" width="280" height="181"
-                    class="global-size-img">
+                  <img loading="lazy" src="./img/dog6.jpg" alt="человек обнимает собаку" width="280" height="181">
                 </picture>
               </div>
             </li>
           </ol>
-          <button class="main-help__button" id="btn-modal">
+          <button class="main-help__button btn-modal">
             <svg class="main-help__button-img btn-shadow" width="111" height="96" viewBox="0 0 111 96"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -720,7 +732,7 @@
 
     <section class="form-help">
       <div class="container">
-        <form action="" class="form-help__form">
+        <form class="form-help__form">
           <h2 class="form-help__title">Ты можешь помочь нам!</h2>
           <h3 class="form-help__title-h3">Хочешь забрать питомца, стать волонтером, или опекуном?
             <b class="form-help__title-h3-bold">Свяжись с нами!</b>
@@ -745,12 +757,13 @@
           </ul>
           <h3 class="form-help__title-h3">Или оставь свои контакты и мы сами свяжемся с тобой!</h3>
           <div class="form-help__div-wrapper-label">
-            <label for="phone" class="form-help__form-label">Телефон
+            <label class="form-help__form-label">Телефон
               <input type="tel" name="phone" required inputmode="tel" placeholder="+7(___)-___-__-__"
                 class="form-help__form-input">
             </label>
-            <label for="email" class="form-help__form-label">E-mail
-              <input type="email" name="email" class="form-help__form-input"></label>
+            <label class="form-help__form-label">E-mail
+              <input type="email" name="email" class="form-help__form-input">
+            </label>
           </div>
           <button class="form-help__form-button" type="submit">
             <svg class="form-help__button-img btn-shadow" width="73" height="69" viewBox="0 0 111 96"
@@ -773,15 +786,14 @@
     </section>
 
   </main>
-
   <footer class="footer-pading-top">
     <section class="footer" id="contacts">
       <div class="container footer-grid-container">
         <div id="map" class="footer__contact-map"></div>
         <div class="footer__contact-flex">
-          <h3 class="contacts__contact-flex-h3">Friendly House</h3>
-          <p class="contacts__contact-flex-p">приют для животных</p>
-          <p class="contacts__contact-flex-p-adress">103929, Москва, Пятницкое шоссе, дом 28</p>
+          <h3 class="footer__contact-flex-h3">Friendly House</h3>
+          <p class="footer__contact-flex-p">приют для животных</p>
+          <p class="footer__contact-flex-p-adress">103929, Москва, Пятницкое шоссе, дом 28</p>
           <a href="tel:88493003957" class="footer__contact-flex-link"><svg width="18" height="18" viewBox="0 0 18 18"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -866,7 +878,7 @@
           <rect x="0.797363" y="28.5814" width="40" height="3" rx="1" transform="rotate(-45 0.797363 28.5814)" />
           <rect x="3.91846" y="0.29718" width="40" height="3" rx="1" transform="rotate(45 3.91846 0.29718)" />
         </svg></button>
-      <form action="" class="form-help__form modal__from">
+      <form class="form-help__form modal__from">
         <h2 class="form-help__title">Ты можешь помочь нам!</h2>
         <h3 class="form-help__title-h3">Хочешь забрать питомца, стать волонтером, или опекуном?
           <b class="form-help__title-h3-bold">Свяжись с нами!</b>
@@ -891,11 +903,11 @@
         </ul>
         <h3 class="form-help__title-h3">Или оставь свои контакты и мы сами свяжемся с тобой!</h3>
         <div class="form-help__div-wrapper-label">
-          <label for="phone" class="form-help__form-label">Телефон
+          <label class="form-help__form-label">Телефон
             <input type="tel" name="phone" required inputmode="tel" placeholder="+7(___)-___-__-__"
               class="form-help__form-input">
           </label>
-          <label for="email" class="form-help__form-label">E-mail
+          <label class="form-help__form-label">E-mail
             <input type="email" name="email" class="form-help__form-input"></label>
         </div>
         <button class="form-help__form-button" type="submit">

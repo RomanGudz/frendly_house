@@ -1,17 +1,17 @@
-const btnMenu = document.querySelector('.navigate__button-menu');
+const btnMenu = document.querySelector('.header__navigate-button-menu');
 const menuHeader = document.querySelector('.header__navigate');
-const svgmenu = document.querySelector('.navigate__button-menu-svg');
-const svgCloseMenu = document.querySelector('.navigate__button-menu-svg-close');
+const svgmenu = document.querySelector('.header__navigate-button-menu-svg');
+const svgCloseMenu = document.querySelector('.header__navigate-button-menu-svg-close');
 
 btnMenu.addEventListener('click', () => {
-  menuHeader.classList.toggle('navigate__visually-hidden');
+  menuHeader.classList.toggle('header__navigate-visually-hidden');
   menuHeader.classList.toggle('navigate__visible');
   svgmenu.classList.toggle('toggle-svg');
   svgCloseMenu.classList.toggle('toggle-svg');
 
 });
 
-const btnModalOpen = document.querySelectorAll('#btn-modal');
+const btnModalOpen = document.querySelectorAll('.btn-modal');
 const btnModalClose = document.querySelector('.modal__btn-close');
 const modalOverlay = document.querySelector('.modal-overlay');
 
@@ -36,7 +36,7 @@ modalOverlay.addEventListener('click', (e) => {
 menuHeader.addEventListener('click', e => {
   const target = e.target;
   if (target.className === 'header__item-link') {
-    menuHeader.classList.toggle('navigate__visually-hidden');
+    menuHeader.classList.toggle('header__navigate-visually-hidden');
     menuHeader.classList.toggle('navigate__visible');
     svgmenu.classList.toggle('toggle-svg');
     svgCloseMenu.classList.toggle('toggle-svg');
@@ -115,7 +115,6 @@ $(function () {
   $("#tabs").tabs({
     activate: function (event, ui) {
       $('.banner__tabs-list-item').removeClass('hidden-tab');
-      console.log(ui);
       const activeTabId = ui.newTab.find('a').attr('href');
       $('a[href="' + activeTabId + '"]').closest('.banner__tabs-list-item').addClass('hidden-tab');
     }

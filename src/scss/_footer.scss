@@ -41,19 +41,19 @@
   justify-content: space-between;
 }
 
-.contacts__contact-flex-h3 {
+.footer__contact-flex-h3 {
   font-family: var(--second-family);
   font-size: 40px;
   line-height: 100%;
 }
 
-.contacts__contact-flex-p {
+.footer__contact-flex-p {
   font-weight: 300;
   font-size: 20px;
   line-height: 130%;
 }
 
-.contacts__contact-flex-p-adress {
+.footer__contact-flex-p-adress {
   font-weight: 300;
   font-size: 14px;
   line-height: 129%;
@@ -152,7 +152,7 @@
 
   .footer__contact-flex {
     grid-column: 7/10;
-    padding-top: 33x;
+    padding-top: 33xp;
     gap: 10px;
   }
 
@@ -162,16 +162,16 @@
     justify-content: flex-start;
   }
 
-  .contacts__contact-flex-h3 {
+  .footer__contact-flex-h3 {
     font-size: 34px;
   }
 
-  .contacts__contact-flex-p {
+  .footer__contact-flex-p {
     font-size: 18px;
     line-height: 133%;
   }
 
-  .contacts__contact-flex-p-adress {
+  .footer__contact-flex-p-adress {
     font-size: 10px;
   }
 
@@ -244,17 +244,17 @@
     justify-content: space-between;
   }
 
-  .contacts__contact-flex-h3 {
+  .footer__contact-flex-h3 {
     grid-column: 1/5;
     grid-row: 1/2;
   }
 
-  .contacts__contact-flex-p {
+  .footer__contact-flex-p {
     grid-column: 1/4;
     grid-row: 2/3;
   }
 
-  .contacts__contact-flex-p-adress {
+  .footer__contact-flex-p-adress {
     grid-column: 1/5;
     grid-row: 3/4;
     padding-top: 10px;
@@ -269,8 +269,9 @@
   }
 
   .footer__contact-flex-link:first-of-type {
+    justify-self: start;
     padding-top: 0;
-    grid-column: 6/9;
+    grid-column: 6/10;
     grid-row: 2/3;
   }
 
@@ -294,6 +295,13 @@
   //   font-size: 14px;
   //   line-height: 114%;
   // }
+}
+@media (max-width: 680px) {
+  .footer__contact-flex-link {
+    grid-column: 5/10;
+    justify-self: end;
+    grid-row: 3/4;
+  }
 }
 
 @media (max-width: 480px) {
@@ -332,17 +340,17 @@
     gap: 20px;
   }
 
-  .contacts__contact-flex-h3 {
+  .footer__contact-flex-h3 {
     font-size: 24px;
     line-height: 125%;
   }
 
-  .contacts__contact-flex-p {
+  .footer__contact-flex-p {
     font-size: 14px;
     line-height: 143%;
   }
 
-  .contacts__contact-flex-p-adress {
+  .footer__contact-flex-p-adress {
     line-height: 129%;
   }
 
