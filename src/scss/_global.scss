@@ -170,6 +170,11 @@ section {
   filter: drop-shadow(4px 6px 3px rgba(#ff8a00, 0.25));
 }
 
+.global-size-img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -184,6 +189,12 @@ section {
   section {
     font-display: swap;
     padding-top: 70px;
+  }
+
+  .global-size-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @media (max-width: 768px) {

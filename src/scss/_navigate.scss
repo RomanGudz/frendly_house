@@ -10,7 +10,7 @@
   position: absolute;
 }
 
-.header__navigate-visually-hidden {
+.navigate__visually-hidden {
   transform: scale(0);
   transition: transform 0.3s ease, opacity 0.5s ease;
   opacity: 0;
@@ -75,12 +75,7 @@
   background-color: var(--1);
 }
 
-.header__navigate-button-menu {
-  border: none;
-  background-color: var(--3);
-}
-
-.header__navigate-button-menu-svg-close {
+.navigate__button-menu-svg-close {
   display: none;
   width: 33px;
   height: 25px;
@@ -88,7 +83,7 @@
   transition-duration: fill 0.3s ease;
 }
 
-.header__navigate-button-menu-svg-close:active {
+.navigate__button-menu-svg-close:active {
   fill: #5b5656;
 }
 
@@ -168,7 +163,7 @@
     width: 270px;
   }
 
-  .header__navigate-button-menu-svg-close {
+  .navigate__button-menu-svg-close {
     display: block;
   }
 
